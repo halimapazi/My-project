@@ -9,13 +9,24 @@
 </head>
 <body>
 
+  <center>
+<div class="container">
+    <div class="row mt-5"></div>
+    <div class="row mt-5">
+        <h3>Login Form</h3>
+    </div>
 <form action="/login_view" method="POST" class="post-form" >
     {% csrf_token %}
-    <input type="text" placeholder="email" name="email" required="" />
+    <input type="text" placeholder="email" name="email" required="" /><br>
+    <br>
     <input type="password" placeholder="password" name="password" required="" />
+    <br>
+    <br>
     <button type="submit" class="btn btn-primary">login</button>
 
 </form>
+</div>
+</center>
 
 </body>
 </html>
